@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #3b1402;
+  text-align: left;
+  background: rgb(253, 251, 230);
+  margin: 10px 0;
+}
+
+.colorScheme,
+.previewWrap,
+.editorWrap textarea {
+  background-color: #fdf1d7;
+  border: 1px solid #1d2f2f;
+  box-shadow: 1px 1px 10px 2px rgb(148, 148, 148);
+  border-top: none;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  background-color: rgb(236, 218, 185);
+  padding: 0.3rem;
+  border: 1px solid #1d2f2f;
+  box-shadow: 1px 1px 10px 2px rgb(148, 148, 148);
+  font-family: Russo One;
+  font-size: 1rem;
+  color: black;
+}
+
+.fa-retweet:hover {
+  color: #fdf1d7;
+  cursor: pointer;
+}
+
+.editorWrap {
+  max-width: 70vw;
+  margin: 1.125rem auto;
+}
+.editorWrap .toolbar {
+  width: 99%;
+}
+.editorWrap textarea {
+  width: 99%;
+  min-height: 200px;
+  margin-bottom: -5px;
+  resize: vertical;
+  outline: none;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-size: 0.875rem;
+}
+
+.converter {
+  width: 100px;
+  text-align: center;
+  font-size: 35px;
+  margin: auto;
+}
+
+.previewWrap {
+  max-width: 70vw;
+  margin: 1.25rem auto;
+  min-height: 200px;
+  overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 992px) {
+  .previewWrap {
+    max-width: 90vw;
+  }
+
+  .editorWrap {
+    max-width: 90vw;
+  }
+}
+
+#preview {
+  padding: 0 1rem;
+}
+#preview blockquote {
+  border-left: 3px solid #224b4b;
+  color: #224b4b;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+#preview > p > code {
+  padding: 3px;
+}
+#preview code {
+  background: white;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+#preview pre {
+  display: block;
+  overflow: auto;
+  background: white;
+  padding: 5px;
+  line-height: 1.2;
+}
+#preview h1 {
+  border-bottom: 2px solid #224b4b;
+}
+#preview h2 {
+  border-bottom: 1px solid #224b4b;
+}
+#preview table {
+  border-collapse: collapse;
+}
+#preview td,
+#preview th {
+  border: 2px solid #224b4b;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#preview img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+@media screen and (max-width: 420px) {
+  body {
+    font-size: 0.875rem;
+  }
+}
